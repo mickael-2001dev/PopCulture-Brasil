@@ -61,18 +61,14 @@ h6 {
 }
 
 header.masthead {
-  overflow: hidden;
-  padding-top: calc(7rem + 72px);
-  padding-bottom: 7rem;
-  background-size: cover;*/
-
+  background-size: cover;
   margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
   position: relative;
-  min-height: 100%;*/
- 
-
+  min-height: 100%;
+  background-position: 50% 0;
   background-repeat: repeat;
-  background-attachment: fixed;
 }
 
 #cinema{
@@ -91,7 +87,15 @@ header.masthead {
 #news {
    background-image: url('../img/news.jpg');
 }
-
+#hqs{
+   background-image: url('../img/hq.jpg');
+}
+#music{
+   background-image: url('../img/music.jpg');
+}
+#videos{
+   background-image: url('../img/videos.jpg');
+}
 header.masthead .masthead-content {
   z-index: 1;
   position: relative;
@@ -189,6 +193,7 @@ header.masthead .bg-circle-4 {
 
 .mainP{
   font-size: 14pt!important;
+  color: #E4E4E4;
 }
 
 .mainCont{
@@ -200,6 +205,9 @@ header.masthead .bg-circle-4 {
 }
 .news{
   margin-bottom: 10%;
+}
+.custom-views{
+  margin-top: 10%;
 }
 .person-btn-1{
   font-size: 16pt;
@@ -227,8 +235,15 @@ header.masthead .bg-circle-4 {
   padding-top: 15px;
   width: 200px;
 }
-
-.carousel-item, .active, .carousel-item-left{
+.carousel-item{
+    background-attachment: fixed!important;
+}
+.custom-form{
+  padding: 1px!important;
+  padding-left: 5px!important;
+  font-size: 10pt!important;
+}
+.bgParallax {
   margin: 0 auto;
   width: 100%;
   max-width: 1920px;
@@ -239,8 +254,51 @@ header.masthead .bg-circle-4 {
   background-repeat: repeat;
   background-attachment: fixed;
 }
-.custom-form{
-  padding: 1px!important;
-  padding-left: 5px!important;
-  font-size: 10pt!important;
+
+.custom-page-link{
+   background-color: #e67e22;
+   color: #fff;
+}
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #cc5500;
+    border-color: #cc5500;
+}
+.custom-page-link:hover{
+   background-color: #cc5500;
+   color: #fff;
+}
+.pagination-custom{
+  margin-top: 4%;
+}
+.carousel-indicators li {
+    border-radius: 100%;
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: #1e272e;
+    border: 8px solid #1e272e;
+}
+
+.carousel-indicators .active {
+  
+    background-color: #e67e22;
+
+}
+.social-medias{
+    margin-bottom: 2%;
+}
+.social{
+  border-radius: 100%;
+  background-color: #e67e22;
+}
+.social:hover{
+   background-color: #cc5500;
 }
